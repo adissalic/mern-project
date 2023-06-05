@@ -5,12 +5,9 @@ import { CSSTransition } from "react-transition-group";
 import classes from "./Modal.module.css";
 import Backdrop from "./Backdrop";
 
-const ModalOverlay = props => {
+const ModalOverlay = (props) => {
   const content = (
-    <div
-      className={`${classes.modal} ${props.className}`}
-      style={props.style}
-    >
+    <div className={`${classes.modal} ${props.className}`} style={props.style}>
       <header className={`${classes["modal__header"]} ${props.headerClass}`}>
         <h2>{props.header}</h2>
       </header>

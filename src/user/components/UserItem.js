@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./UserItem.module.css";
 import Avatar from "../../shared/components/UIElements/Avatar";
-import Card from "../../shared/components/UIElements/Card"
+import Card from "../../shared/components/UIElements/Card";
 import { Link } from "react-router-dom";
 
 const UserItem = (props) => {

@@ -15,7 +15,7 @@ const Map = (props) => {
   }, [center, zoom]);
 
   return (
-    <div className={classes['map-container']}>
+    <div className={classes["map-container"]}>
       <div
         ref={mapRef}
         className={`${classes.map} ${props.className}`}
