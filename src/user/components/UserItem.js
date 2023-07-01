@@ -11,7 +11,11 @@ const UserItem = (props) => {
         <Card>
           <Link to={`/${props.id}/places`}>
             <div className={classes["user-item__image"]}>
-              <Avatar image={props.image} alt={props.name} classame="ser" />
+              <Avatar
+                image={`${process.env.REACT_APP_ASSET_URL}/${props.image}`}
+                alt={props.name}
+                classname="ser"
+              />
             </div>
             <div className={classes["user-item__info"]}>
               <h2>{props.name}</h2>

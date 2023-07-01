@@ -12,6 +12,7 @@
 .center {
   text-align: center;
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
 }

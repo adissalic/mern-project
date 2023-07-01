@@ -23,7 +23,7 @@ const NavLinks = (props) => {
       {auth.isLoggedIn && (
         <li>
           <NavLink
-            to="/u1/places"
+            to={`/${auth.userId}/places`}
             className={({ isActive, isPending }) =>
               isPending ? classes.pending : isActive ? classes.active : ""
             }
